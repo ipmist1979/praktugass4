@@ -30,7 +30,7 @@ if uploaded_file is not None:
     kolom_dipilih = st.multiselect("Pilih kolom untuk ditampilkan", options=df.columns)
 
     # Input untuk memilih jenis grafik
-    jenis_grafik = st.selectbox("Pilih jenis grafik", ["Bar", "Line", "Area"])
+    jenis_grafik = st.radio("Pilih jenis grafik", ["Bar", "Line", "Area"])
 
     # Menampilkan grafik untuk setiap kolom yang dipilih
     if kolom_dipilih:
